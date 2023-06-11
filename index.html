@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/731af14252.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <h1>Nationalize API</h1>
+        <p><i>Search for the nationality based on the name.</i></p>
+      </div>
+      <div class="search-wrapper">
+        <input type="search" id="search" placeholder="Search here..." onchange="window.location.reload()" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Country Id</th>
+              <th>Probability</th>
+            </tr>
+          </thead>
+          <tbody id="countries-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
