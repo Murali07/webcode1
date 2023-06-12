@@ -1,8 +1,7 @@
 let target = document.getElementById("search");
 const param1 = target.value;
 
-async function getCountriesData() {
-  // const response = await fetch("https://restcountries.com/v2/all")
+async function getCountriesData() {  
   const response = await fetch(`https://api.nationalize.io/?name=${param1}`);  
   const countriesData = await response.json();
   return countriesData;
